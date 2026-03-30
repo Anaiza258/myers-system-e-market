@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Myer-Systems eMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <span>🚚 FREE SHIPPING ON ALL ORDERS OVER $75</span>
+      <div class="d-none d-md-flex gap-4">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund.html">Refund &amp; Returns</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container py-3">
+    <div class="d-flex align-items-center gap-3 gap-lg-4">
+      <a href="../index.html" class="header-logo me-2">Myer<span>-Systems</span><small>eMarket</small></a>
+      <form class="search-wrap flex-grow-1 d-none d-md-flex search-form" style="max-width:520px;">
+        <input type="text" placeholder="Search products..." id="main-search-input" />
+        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="17" height="17"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg></button>
+      </form>
+      <div class="d-flex align-items-center gap-1 ms-auto">
+        <a href="account.html" class="header-icon d-none d-md-flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg><span class="d-none d-lg-inline">Account</span></a>
+        <a href="wishlist.html" class="header-icon" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg><span class="cart-badge wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-icon" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg><span class="cart-badge" style="display:none;">0</span><span class="d-none d-lg-inline">Cart</span></a>
+        <button class="hamburger d-md-none" id="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg></button>
+      </div>
+    </div>
+    <form class="search-wrap mt-3 d-flex d-md-none search-form"><input type="text" placeholder="Search products..." /><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg></button></form>
+  </div>
+  <nav class="site-nav d-none d-md-block">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="cat-dropdown-wrap">
+          <button class="browse-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="17" height="17"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg> Browse Categories</button>
+          <div class="cat-dropdown" id="cat-dropdown-main"></div>
+        </div>
+        <a href="../index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <div class="ms-auto d-flex">
+          <a href="shop.html?sale=true" class="nav-special">Special Offers</a>
+          <a href="account.html">My Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html">Home</a><a href="shop.html">Shop</a>
+    <a href="shop.html?sale=true" style="color:#e53e3e;font-weight:600;">Special Offers</a>
+    <a href="contact.html">Contact Us</a><a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a><a href="account.html">My Account</a><a href="wishlist.html">Wishlist</a>
+    <div class="mobile-cat-label">Categories</div>
+    <div id="mobile-cats"></div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar" style="background:var(--surface);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <a href="../index.html">Home</a><span class="breadcrumb-sep">/</span>
+    <span class="current" id="breadcrumb-current">Shop</span>
+  </div>
+</div>
+
+<!-- SHOP BODY -->
+<div class="container py-5">
+  <div class="d-flex flex-column flex-lg-row gap-4">
+
+    <!-- SIDEBAR -->
+    <aside class="shop-sidebar" id="shop-sidebar">
+      <div class="sidebar-block">
+        <p class="sidebar-title">Categories</p>
+        <div class="sidebar-cat-link active" data-slug="" onclick="filterByCategory(this, '')">
+          All Products
+        </div>
+        <div id="sidebar-cats"></div>
+      </div>
+      <div class="sidebar-block">
+        <p class="sidebar-title">Price Range</p>
+        <div class="price-inputs">
+          <input type="number" id="price-min" value="0" min="0" placeholder="Min" />
+          <span style="color:var(--muted)">—</span>
+          <input type="number" id="price-max" value="300" max="1000" placeholder="Max" />
+        </div>
+        <button class="btn-primary-custom mt-3 w-100" style="padding:9px;" onclick="applyFilters()">Apply</button>
+      </div>
+      <div class="sidebar-block">
+        <p class="sidebar-title">Badge</p>
+        <div id="badge-filters">
+          <div class="sidebar-cat-link active" data-badge="" onclick="filterByBadge(this, '')">All</div>
+          <div class="sidebar-cat-link" data-badge="sale" onclick="filterByBadge(this, 'sale')"><span class="product-badge badge-sale me-2" style="position:static;padding:2px 8px;">Sale</span> On Sale</div>
+          <div class="sidebar-cat-link" data-badge="hot" onclick="filterByBadge(this, 'hot')"><span class="product-badge badge-hot me-2" style="position:static;padding:2px 8px;color:#152B5E;">Hot</span> Trending</div>
+          <div class="sidebar-cat-link" data-badge="new" onclick="filterByBadge(this, 'new')"><span class="product-badge badge-new me-2" style="position:static;padding:2px 8px;">New</span> New Arrivals</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- PRODUCTS AREA -->
+    <div class="flex-grow-1">
+      <div class="shop-toolbar">
+        <div class="d-flex align-items-center gap-3">
+          <button class="filter-mobile-btn" id="filter-toggle-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/></svg>
+            Filters
+          </button>
+          <p class="result-count mb-0">Showing <strong id="result-count">0</strong> results</p>
+        </div>
+        <select class="sort-select" id="sort-select" onchange="applyFilters()">
+          <option value="default">Default Sorting</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Highest Rated</option>
+          <option value="name">Alphabetical</option>
+        </select>
+      </div>
+      <div class="products-grid products-grid-3" id="shop-products"></div>
+      <div id="no-results" class="text-center py-5" style="display:none;">
+        <div style="font-size:3rem;margin-bottom:16px;">🔍</div>
+        <h5>No products found</h5>
+        <p style="color:var(--muted);">Try adjusting your filters or search terms.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">
+            <div class="footer-brand-name">Myer<span>-Systems</span></div>
+            <p>Your one-stop marketplace for quality products across every category.</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <p class="footer-heading">Quick Links</p>
+          <div class="footer-links">
+            <a href="shop.html">Shop All</a><a href="shop.html?sale=true">Special Offers</a>
+            <a href="cart.html">Cart</a><a href="account.html">My Account</a><a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <p class="footer-heading">Categories</p>
+          <div class="footer-links" id="footer-cats"></div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-heading">Customer Service</p>
+          <div class="footer-links mb-3">
+            <a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund &amp; Returns</a><a href="contact.html">Help &amp; Support</a>
+          </div>
+          <p class="footer-heading">Newsletter</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Your email" />
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2">
+      <p class="mb-0">© 2026 Myer-Systems eMarket. All rights reserved.</p>
+      <div class="payment-methods"><span class="payment-method">Visa</span><span class="payment-method">Mastercard</span><span class="payment-method">PayPal</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+// ── Read URL params ──
+const params = new URLSearchParams(window.location.search);
+let currentCategorySlug = params.get('category') || '';
+let currentBadge = params.get('sale') === 'true' ? 'sale' : '';
+let currentQ = params.get('q') || '';
+const searchInput = document.getElementById('main-search-input');
+if (searchInput && currentQ) searchInput.value = currentQ;
+
+// Update breadcrumb
+const bc = document.getElementById('breadcrumb-current');
+if (currentCategorySlug) {
+  const cat = categories.find(c => c.slug === currentCategorySlug);
+  if (cat) bc.textContent = cat.name;
+} else if (params.get('sale') === 'true') {
+  bc.textContent = 'Special Offers';
+}
+
+// ── Sidebar categories ──
+const sbCats = document.getElementById('sidebar-cats');
+if (sbCats) {
+  sbCats.innerHTML = categories.map(c => `
+    <div class="sidebar-cat-link ${currentCategorySlug === c.slug ? 'active' : ''}" data-slug="${c.slug}" onclick="filterByCategory(this, '${c.slug}')">
+      ${c.name} <span class="cnt">(${c.count})</span>
+    </div>`).join('');
+}
+
+// Activate badge filter if sale param
+if (currentBadge) {
+  document.querySelectorAll('[data-badge]').forEach(el => {
+    el.classList.toggle('active', el.dataset.badge === currentBadge);
+  });
+}
+
+// ── Filter State ──
+function filterByCategory(el, slug) {
+  currentCategorySlug = slug;
+  document.querySelectorAll('[data-slug]').forEach(e => e.classList.remove('active'));
+  el.classList.add('active');
+  applyFilters();
+}
+function filterByBadge(el, badge) {
+  currentBadge = badge;
+  document.querySelectorAll('[data-badge]').forEach(e => e.classList.remove('active'));
+  el.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = (searchInput?.value || currentQ).toLowerCase().trim();
+  const minP = parseFloat(document.getElementById('price-min')?.value || 0);
+  const maxP = parseFloat(document.getElementById('price-max')?.value || 999);
+  const sort = document.getElementById('sort-select')?.value || 'default';
+
+  let result = [...products];
+  if (currentCategorySlug) result = result.filter(p => p.categorySlug === currentCategorySlug);
+  if (currentBadge) result = result.filter(p => currentBadge === 'sale' ? p.originalPrice : p.badge === currentBadge);
+  if (q) result = result.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q) || p.description.toLowerCase().includes(q));
+  result = result.filter(p => p.price >= minP && p.price <= maxP);
+
+  switch (sort) {
+    case 'price-asc': result.sort((a,b) => a.price - b.price); break;
+    case 'price-desc': result.sort((a,b) => b.price - a.price); break;
+    case 'rating': result.sort((a,b) => b.rating - a.rating); break;
+    case 'name': result.sort((a,b) => a.name.localeCompare(b.name)); break;
+  }
+
+  const container = document.getElementById('shop-products');
+  const noRes = document.getElementById('no-results');
+  document.getElementById('result-count').textContent = result.length;
+
+  if (result.length === 0) {
+    container.innerHTML = '';
+    noRes.style.display = 'block';
+  } else {
+    noRes.style.display = 'none';
+    container.innerHTML = result.map(p => productCardHtmlShop(p)).join('');
+    bindProductCardEvents(container);
+  }
+}
+
+applyFilters();
+
+// ── Populate dropdowns ──
+populateCatDropdownShop('cat-dropdown-main');
+const mobileCats = document.getElementById('mobile-cats');
+if (mobileCats) mobileCats.innerHTML = categories.map(c => `<a href="shop.html?category=${c.slug}">${c.name}</a>`).join('');
+const footerCats = document.getElementById('footer-cats');
+if (footerCats) footerCats.innerHTML = categories.slice(0, 6).map(c => `<a href="shop.html?category=${c.slug}">${c.name}</a>`).join('');
+
+// ── Filter mobile toggle ──
+document.getElementById('filter-toggle-btn')?.addEventListener('click', () => {
+  const sb = document.getElementById('shop-sidebar');
+  sb?.classList.toggle('show');
+});
+
+// ── Search form ──
+document.querySelectorAll('.search-form').forEach(form => {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const q = form.querySelector('input')?.value.trim();
+    currentQ = q || '';
+    applyFilters();
+  });
+});
+</script>
+</body>
+</html>

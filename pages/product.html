@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Product — Myer-Systems eMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="d-flex justify-content-between align-items-center"><span>🚚 FREE SHIPPING ON ALL ORDERS OVER $75</span><div class="d-none d-md-flex gap-4"><a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund &amp; Returns</a></div></div></div></div>
+<header class="site-header">
+  <div class="container py-3">
+    <div class="d-flex align-items-center gap-3 gap-lg-4">
+      <a href="../index.html" class="header-logo me-2">Myer<span>-Systems</span><small>eMarket</small></a>
+      <form class="search-wrap flex-grow-1 d-none d-md-flex search-form" style="max-width:520px;"><input type="text" placeholder="Search products..." /><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="17" height="17"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg></button></form>
+      <div class="d-flex align-items-center gap-1 ms-auto">
+        <a href="account.html" class="header-icon d-none d-md-flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg><span class="d-none d-lg-inline">Account</span></a>
+        <a href="wishlist.html" class="header-icon" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg><span class="cart-badge wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-icon" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg><span class="cart-badge" style="display:none;">0</span><span class="d-none d-lg-inline">Cart</span></a>
+        <button class="hamburger d-md-none" id="hamburger-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg></button>
+      </div>
+    </div>
+    <form class="search-wrap mt-3 d-flex d-md-none search-form"><input type="text" placeholder="Search..." /><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg></button></form>
+  </div>
+  <nav class="site-nav d-none d-md-block"><div class="container"><div class="nav-inner"><div class="cat-dropdown-wrap"><button class="browse-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="17" height="17"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg> Browse Categories</button><div class="cat-dropdown" id="cat-dropdown-main"></div></div><a href="../index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact Us</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a><div class="ms-auto d-flex"><a href="shop.html?sale=true" class="nav-special">Special Offers</a><a href="account.html">My Account</a></div></div></div></nav>
+  <div class="mobile-nav" id="mobile-nav"><a href="../index.html">Home</a><a href="shop.html">Shop</a><a href="cart.html">Cart</a><a href="account.html">My Account</a><a href="wishlist.html">Wishlist</a></div>
+</header>
+
+<div class="container py-4">
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar mb-4">
+    <a href="../index.html">Home</a><span class="breadcrumb-sep">/</span>
+    <a href="shop.html">Shop</a><span class="breadcrumb-sep">/</span>
+    <a href="#" id="bc-category">Category</a><span class="breadcrumb-sep">/</span>
+    <span class="current" id="bc-product">Product</span>
+  </div>
+
+  <!-- Product Main -->
+  <div id="product-not-found" style="display:none;text-align:center;padding:80px 0;">
+    <h3>Product Not Found</h3>
+    <a href="shop.html" class="btn-primary-custom mt-3">Back to Shop</a>
+  </div>
+
+  <div id="product-main" class="row g-4 g-lg-5">
+    <!-- Images -->
+    <div class="col-md-5">
+      <div class="product-img-gallery">
+        <div class="main-img"><img id="main-img" src="" alt="" /></div>
+        <div class="thumb-row" id="thumb-row"></div>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <div class="col-md-7">
+      <a href="#" class="product-cat-link" id="prod-cat-link"></a>
+      <h1 class="product-detail-title" id="prod-name"></h1>
+      <div class="product-rating-row">
+        <div class="stars" id="prod-stars"></div>
+        <span style="font-size:13px;color:var(--muted);" id="prod-reviews"></span>
+      </div>
+      <div class="d-flex align-items-baseline gap-3 mb-3">
+        <span class="product-price-main" id="prod-price"></span>
+        <span class="product-price-was" id="prod-was"></span>
+        <span class="product-discount-badge" id="prod-discount" style="display:none;"></span>
+      </div>
+      <p class="product-desc" id="prod-desc"></p>
+
+      <div class="guarantee-bar">
+        <div class="guarantee-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg> Free Shipping over $75</div>
+        <div class="guarantee-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg> Secure Payment</div>
+        <div class="guarantee-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg> 30-Day Returns</div>
+      </div>
+
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <div class="qty-ctrl">
+          <button id="qty-minus">−</button>
+          <span id="qty-display">1</span>
+          <button id="qty-plus">+</button>
+        </div>
+        <button class="add-to-cart-big flex-grow-1" id="atc-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg>
+          Add to Cart
+        </button>
+        <button class="wishlist-big-btn" id="wishlist-btn" title="Add to Wishlist">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs: Description / Reviews -->
+  <div class="product-tabs mt-5" id="product-tabs" style="display:none;">
+    <div class="tab-nav">
+      <button class="tab-nav-btn active" data-panel="description">Description</button>
+      <button class="tab-nav-btn" data-panel="reviews">Reviews</button>
+    </div>
+    <div class="tab-panel active" id="panel-description">
+      <p id="tab-desc-text" style="color:var(--muted);line-height:1.9;font-size:14px;"></p>
+    </div>
+    <div class="tab-panel" id="panel-reviews">
+      <div class="row g-3 mt-1">
+        <div class="col-md-4">
+          <div style="text-align:center;padding:30px;background:var(--surface);border-radius:12px;">
+            <div style="font-size:3.5rem;font-weight:800;color:var(--primary);" id="avg-rating"></div>
+            <div class="stars justify-content-center d-flex mb-2" id="avg-stars"></div>
+            <p style="font-size:13px;color:var(--muted);" id="total-reviews"></p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div id="review-bars"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <div class="related-section" id="related-section" style="display:none;">
+    <h3 class="section-title mb-4">Related Products</h3>
+    <div class="products-grid products-grid-4" id="related-products"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-bottom"><div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2"><p class="mb-0">© 2026 Myer-Systems eMarket. All rights reserved.</p><div class="payment-methods"><span class="payment-method">Visa</span><span class="payment-method">Mastercard</span><span class="payment-method">PayPal</span></div></div></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+const slug = new URLSearchParams(window.location.search).get('slug');
+const product = products.find(p => p.slug === slug);
+
+if (!product) {
+  document.getElementById('product-main').style.display = 'none';
+  document.getElementById('product-not-found').style.display = 'block';
+} else {
+  // Setup page
+  document.getElementById('page-title').textContent = product.name + ' — Myer-Systems eMarket';
+  document.getElementById('bc-category').textContent = product.category;
+  document.getElementById('bc-category').href = 'shop.html?category=' + product.categorySlug;
+  document.getElementById('bc-product').textContent = product.name;
+  document.getElementById('prod-cat-link').textContent = product.category;
+  document.getElementById('prod-cat-link').href = 'shop.html?category=' + product.categorySlug;
+  document.getElementById('prod-name').textContent = product.name;
+  document.getElementById('prod-reviews').textContent = '(' + product.reviews + ' reviews)';
+  document.getElementById('prod-price').textContent = '$' + product.price.toFixed(2);
+  document.getElementById('prod-desc').textContent = product.description;
+  document.getElementById('tab-desc-text').textContent = product.description;
+  document.getElementById('avg-rating').textContent = product.rating.toFixed(1);
+  document.getElementById('total-reviews').textContent = product.reviews + ' total reviews';
+
+  if (product.originalPrice) {
+    const disc = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+    document.getElementById('prod-was').textContent = '$' + product.originalPrice.toFixed(2);
+    const discEl = document.getElementById('prod-discount');
+    discEl.textContent = '-' + disc + '% OFF';
+    discEl.style.display = 'inline-block';
+  }
+
+  // Stars
+  const starsEl = document.getElementById('prod-stars');
+  const avgStarsEl = document.getElementById('avg-stars');
+  const starsHtmlStr = starsHtml(product.rating);
+  starsEl.innerHTML = starsHtmlStr.replace('<div class="stars">', '').replace('</div>', '');
+  avgStarsEl.innerHTML = starsHtmlStr.replace('<div class="stars">', '').replace('</div>', '');
+
+  // Images
+  const mainImg = document.getElementById('main-img');
+  mainImg.src = product.images[0] || product.image;
+  mainImg.alt = product.name;
+
+  const thumbRow = document.getElementById('thumb-row');
+  thumbRow.innerHTML = product.images.map((img, i) => `
+    <div class="thumb-item ${i === 0 ? 'active' : ''}" onclick="setMainImg(this, '${img}')">
+      <img src="${img}" alt="View ${i+1}" loading="lazy" />
+    </div>`).join('');
+
+  // Rating bars
+  const bars = document.getElementById('review-bars');
+  const rating = product.rating;
+  bars.innerHTML = [5,4,3,2,1].map(star => {
+    const pct = star === Math.round(rating) ? 70 : star === Math.floor(rating) ? 50 : star < Math.floor(rating) ? 15 : 5;
+    return `<div class="d-flex align-items-center gap-2 mb-2">
+      <span style="font-size:12px;white-space:nowrap;width:40px;">${star} ★</span>
+      <div style="flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden;">
+        <div style="height:100%;width:${pct}%;background:var(--star);border-radius:4px;"></div>
+      </div>
+      <span style="font-size:12px;color:var(--muted);width:30px;">${pct}%</span>
+    </div>`;
+  }).join('');
+
+  document.getElementById('product-tabs').style.display = 'block';
+
+  // Related
+  const related = products.filter(p => p.categorySlug === product.categorySlug && p.id !== product.id).slice(0, 4);
+  if (related.length) {
+    document.getElementById('related-section').style.display = 'block';
+    const relEl = document.getElementById('related-products');
+    relEl.innerHTML = related.map(p => productCardHtmlShop(p)).join('');
+    bindProductCardEvents(relEl);
+  }
+
+  // Quantity
+  let qty = 1;
+  document.getElementById('qty-minus').addEventListener('click', () => { if (qty > 1) { qty--; document.getElementById('qty-display').textContent = qty; } });
+  document.getElementById('qty-plus').addEventListener('click', () => { qty++; document.getElementById('qty-display').textContent = qty; });
+
+  // Add to Cart
+  document.getElementById('atc-btn').addEventListener('click', () => Store.addToCart(product.id, qty));
+
+  // Wishlist
+  const wBtn = document.getElementById('wishlist-btn');
+  function updateWishlistBtn() {
+    const inW = Store.isInWishlist(product.id);
+    wBtn.classList.toggle('active', inW);
+    wBtn.querySelector('svg').setAttribute('fill', inW ? 'currentColor' : 'none');
+  }
+  updateWishlistBtn();
+  wBtn.addEventListener('click', () => { Store.toggleWishlist(product.id); updateWishlistBtn(); });
+
+  // Product tabs
+  document.querySelectorAll('.tab-nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-nav-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + btn.dataset.panel).classList.add('active');
+    });
+  });
+}
+
+function setMainImg(el, src) {
+  document.getElementById('main-img').src = src;
+  document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+populateCatDropdownShop('cat-dropdown-main');
+document.querySelectorAll('.search-form').forEach(form => {
+  form.addEventListener('submit', e => { e.preventDefault(); const q = form.querySelector('input')?.value.trim(); if (q) window.location.href = 'shop.html?q=' + encodeURIComponent(q); });
+});
+</script>
+</body>
+</html>

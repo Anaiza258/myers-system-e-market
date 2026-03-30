@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Myer-Systems eMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="topbar"><div class="container"><span>🚚 FREE SHIPPING ON ALL ORDERS OVER $75 — SECURE CHECKOUT 🔒</span></div></div>
+<header class="site-header">
+  <div class="container py-3">
+    <div class="d-flex align-items-center gap-3">
+      <a href="../index.html" class="header-logo me-2">Myer<span>-Systems</span><small>eMarket</small></a>
+      <div class="ms-auto d-flex align-items-center gap-1">
+        <a href="cart.html" class="header-icon" style="position:relative;"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg><span class="cart-badge" style="display:none;">0</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Success State -->
+<div id="order-placed" class="container py-5 text-center" style="display:none;">
+  <div class="success-icon">✓</div>
+  <h2 class="section-title mb-3">Order Placed Successfully!</h2>
+  <p style="color:var(--muted);margin-bottom:24px;">Thank you for shopping with Myer-Systems eMarket.<br>You'll receive a confirmation email shortly.</p>
+  <a href="shop.html" class="btn-primary-custom">Continue Shopping</a>
+</div>
+
+<!-- Checkout Form -->
+<div id="checkout-body" class="container py-5">
+  <h1 class="section-title mb-4">Checkout</h1>
+  <!-- Empty cart notice -->
+  <div id="empty-cart-notice" class="text-center py-5" style="display:none;">
+    <h4>Your cart is empty</h4>
+    <a href="shop.html" class="btn-primary-custom mt-3">Go to Shop</a>
+  </div>
+
+  <div id="checkout-form-area" class="row g-4">
+    <div class="col-lg-7">
+      <!-- Billing -->
+      <div class="form-section-box">
+        <h5>Billing Details</h5>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label class="form-label">First Name *</label>
+            <input class="form-input" placeholder="John" />
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label">Last Name *</label>
+            <input class="form-input" placeholder="Doe" />
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label">Email *</label>
+            <input class="form-input" type="email" placeholder="john@example.com" />
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label">Phone *</label>
+            <input class="form-input" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="col-12">
+            <label class="form-label">Address *</label>
+            <input class="form-input" placeholder="123 Main Street" />
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label">City *</label>
+            <input class="form-input" placeholder="New York" />
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label">ZIP Code *</label>
+            <input class="form-input" placeholder="10001" />
+          </div>
+          <div class="col-12">
+            <label class="form-label">Order Notes (optional)</label>
+            <textarea class="form-input" rows="3" placeholder="Any special notes for your order..." style="resize:none;"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="form-section-box">
+        <h5>Payment Method</h5>
+        <label class="payment-option selected" id="pay-card" onclick="selectPayment('pay-card')">
+          <input type="radio" name="payment" checked />
+          <div>
+            <div style="font-size:14px;font-weight:600;">Credit / Debit Card</div>
+            <div style="font-size:12px;color:var(--muted);">Visa, Mastercard, Amex</div>
+          </div>
+          <div class="ms-auto d-flex gap-2">
+            <span style="font-size:11px;padding:3px 8px;border:1px solid var(--border);border-radius:4px;font-weight:600;">VISA</span>
+            <span style="font-size:11px;padding:3px 8px;border:1px solid var(--border);border-radius:4px;font-weight:600;">MC</span>
+          </div>
+        </label>
+        <div id="card-fields" class="row g-3 mt-2 mb-3">
+          <div class="col-12"><input class="form-input" placeholder="Card Number" /></div>
+          <div class="col-6"><input class="form-input" placeholder="MM / YY" /></div>
+          <div class="col-6"><input class="form-input" placeholder="CVV" /></div>
+        </div>
+        <label class="payment-option" id="pay-paypal" onclick="selectPayment('pay-paypal')">
+          <input type="radio" name="payment" />
+          <div>
+            <div style="font-size:14px;font-weight:600;">PayPal</div>
+            <div style="font-size:12px;color:var(--muted);">Fast & secure</div>
+          </div>
+          <span style="font-size:14px;font-weight:800;color:#003087;">Pay<span style="color:#009cde;">Pal</span></span>
+        </label>
+        <label class="payment-option" id="pay-cod" onclick="selectPayment('pay-cod')">
+          <input type="radio" name="payment" />
+          <div>
+            <div style="font-size:14px;font-weight:600;">Cash on Delivery</div>
+            <div style="font-size:12px;color:var(--muted);">Pay when your order arrives</div>
+          </div>
+          <span style="font-size:1.5rem;">💵</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="col-lg-5">
+      <div class="order-summary-box">
+        <h5>Your Order</h5>
+        <div id="order-items" style="border-bottom:1px solid var(--border);padding-bottom:14px;margin-bottom:14px;"></div>
+        <div class="summary-row"><span class="label">Subtotal</span><span id="co-subtotal">$0.00</span></div>
+        <div class="summary-row"><span class="label">Shipping</span><span id="co-shipping">$9.99</span></div>
+        <div class="summary-row summary-total"><span>Total</span><span id="co-total">$0.00</span></div>
+        <button class="place-order-btn mt-4" onclick="placeOrder()">Place Order</button>
+        <p style="font-size:11.5px;color:var(--muted);text-align:center;margin-top:12px;">🔒 Your payment is secure &amp; encrypted</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer"><div class="footer-bottom"><div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2"><p class="mb-0">© 2026 Myer-Systems eMarket. All rights reserved.</p><div class="payment-methods"><span class="payment-method">Visa</span><span class="payment-method">Mastercard</span><span class="payment-method">PayPal</span></div></div></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+function renderCheckout() {
+  if (Store.cart.length === 0) {
+    document.getElementById('empty-cart-notice').style.display = 'block';
+    document.getElementById('checkout-form-area').style.display = 'none';
+    return;
+  }
+  const subtotal = Store.cartTotal();
+  const shipping = subtotal >= 75 ? 0 : 9.99;
+  document.getElementById('co-subtotal').textContent = '$' + subtotal.toFixed(2);
+  document.getElementById('co-shipping').textContent = shipping === 0 ? 'FREE' : '$' + shipping.toFixed(2);
+  document.getElementById('co-total').textContent = '$' + (subtotal + shipping).toFixed(2);
+
+  document.getElementById('order-items').innerHTML = Store.cart.map(item => {
+    const p = products.find(pr => pr.id === item.id);
+    if (!p) return '';
+    return `<div class="d-flex align-items-center gap-3 mb-3">
+      <img src="${p.image}" alt="${p.name}" style="width:56px;height:56px;object-fit:cover;border-radius:8px;border:1px solid var(--border);">
+      <div class="flex-grow-1">
+        <p style="font-size:13px;font-weight:600;margin:0;">${p.name}</p>
+        <p style="font-size:12px;color:var(--muted);margin:0;">Qty: ${item.qty}</p>
+      </div>
+      <span style="font-size:14px;font-weight:700;">$${(p.price * item.qty).toFixed(2)}</span>
+    </div>`;
+  }).join('');
+}
+
+function selectPayment(id) {
+  ['pay-card','pay-paypal','pay-cod'].forEach(i => {
+    const el = document.getElementById(i);
+    el?.classList.remove('selected');
+    el?.querySelector('input')?.removeAttribute('checked');
+  });
+  document.getElementById(id)?.classList.add('selected');
+  document.getElementById(id)?.querySelector('input')?.setAttribute('checked','');
+  document.getElementById('card-fields').style.display = id === 'pay-card' ? 'flex' : 'none';
+}
+
+function placeOrder() {
+  Store.cart = [];
+  Store.save();
+  document.getElementById('checkout-body').style.display = 'none';
+  document.getElementById('order-placed').style.display = 'block';
+}
+
+renderCheckout();
+</script>
+</body>
+</html>
