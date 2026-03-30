@@ -8,7 +8,7 @@ const categories = [
   { name: "Home & Living", slug: "home-living", image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300&h=300&fit=crop", count: 18 },
   { name: "Fashion & Apparel", slug: "fashion", image: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=300&h=300&fit=crop", count: 12 },
   { name: "Beauty & Wellness", slug: "beauty", image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&h=300&fit=crop", count: 15 },
-  { name: "Sports & Outdoors", slug: "sports", image: "https://images.unsplash.com/photo-1461896836934-bd45ba8fcf9b?w=300&h=300&fit=crop", count: 10 },
+  { name: "Sports & Outdoors", slug: "sports", image: "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3V0ZG9vciUyMHNwb3J0fGVufDB8fDB8fHww", count: 10 },
   { name: "Kitchen & Dining", slug: "kitchen", image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=300&fit=crop", count: 16 },
   { name: "Baby & Kids", slug: "baby-kids", image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=300&h=300&fit=crop", count: 11 },
   { name: "Office & Stationery", slug: "office", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=300&fit=crop", count: 9 },
