@@ -47,8 +47,54 @@
   <div id="wishlist-grid" class="products-grid products-grid-4" style="display:none;"></div>
 </div>
 
-<footer class="site-footer"><div class="footer-bottom"><div class="container d-flex align-items-center justify-content-between"><p class="mb-0">© 2026 Myer-Systems eMarket. All rights reserved.</p></div></div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+           <div class="footer-brand">
+            <div class="footer-brand-name">Myer<span>-Systems</span></div>
+            <p>Your one-stop marketplace for quality products across every category. Premium shopping experience with fast delivery and excellent customer service.</p>
+            <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span> 42 Dorothea Ln, Sugar Land, TX 77479</span></div>
+            <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span> +1 (346) 859 5773</span></div>
+            <div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg><span>info@myer-systems.com</span></div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <p class="footer-heading">Quick Links</p>
+          <div class="footer-links">
+            <a href="shop.html">Shop All</a><a href="shop.html?sale=true">Special Offers</a>
+            <a href="cart.html">Cart</a><a href="account.html">My Account</a><a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6">
+          <p class="footer-heading">Categories</p>
+          <div class="footer-links" id="footer-cats"></div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <p class="footer-heading">Customer Service</p>
+          <div class="footer-links mb-3">
+            <a href="privacy.html">Privacy Policy</a><a href="refund.html">Refund &amp; Returns</a><a href="contact.html">Help &amp; Support</a>
+          </div>
+          <p class="footer-heading">Newsletter</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Your email" />
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2">
+      <p class="mb-0">© 2026 Myer-Systems eMarket. All rights reserved.</p>
+      <div class="payment-methods"><span class="payment-method">Visa</span><span class="payment-method">Mastercard</span><span class="payment-method">PayPal</span></div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="../js/main.js"></script>
 <script>
 function renderWishlist() {
